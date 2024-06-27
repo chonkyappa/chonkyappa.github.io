@@ -1,0 +1,243 @@
+body {
+    padding-top: 0px; /* padding on top */
+    background-color:#9C3848;
+    margin:0;
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*styles for the navigation bar */
+.navbarexpand {
+    background-color: #fffce7; /* navigation bar background color */
+}
+.navbarexpand .nav-item.active .nav-link {
+    color: darkred; /* highlight active link with a different color */
+}
+.navbarexpand .navbar-collapse {
+    background-color: #fffce7;
+}
+.nav-item{
+    color:#DB3A34;
+}
+.navbar {
+    margin-bottom: 0px;
+    background-color: #fffce7;
+}
+.logo-img { /*logo size so that it's the same on all pages*/
+    width: 150px;
+    height: 100px;
+}
+
+.navbar-brand {
+    color: #4169e1;
+}
+
+.navbar-nav .nav-link {
+    color: #FF0000;
+}
+/*hover navigation color*/
+.navbar-nav .nav-link:hover {
+    color: #00FF00;
+}
+.picforhomepage img{
+    max-width: 100%; /* Ensures the image does not exceed its original size */
+    height: auto; /* Allows the image to scale proportionally */
+    display: block; /* Removes any extra spaces around the image */
+}
+.card-body{
+    background-color: #fffce7 ;
+}
+.mt-5{
+    color:#fffce7;
+}
+.aboutusdetail{
+    color:#fffce7;
+    font-style: italic;
+}
+.img-aboutus{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Jumbotron styling */
+.jumbotron {
+    background-color: #E5989B;
+    color: #000000;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #000000;
+    border-color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #00FF00;
+    border-color: #00FF00;
+}
+.display-4{
+    font-weight: bold;
+    font-family: 'Great Vibes';
+}
+.bestsoup{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size:large;
+}
+.address{
+    font-style:italic;
+    font-family:'Lucida Sans';
+    font-weight:bold;
+}
+
+.custom-navbar{
+    background-color: #9c3848;
+}
+#entiremenucontainer{
+    background-color: #E5989B;
+}
+
+.custom-navbar .nav-link {
+    color: #000000; /*color for my menu navigation bar */
+}
+
+/*this is for the menu so that everything is aligned*/
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+.menu-item-name {
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 10px; 
+  }
+
+.menu-item-description {
+    flex-grow: 2;
+  }
+
+.menu-item-price {
+    width: 80px; 
+    text-align: right; 
+  }
+.menu-sections{
+    font-family: 'MerriWeather';
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; /* hide overflow to prevent scrollbar */
+}
+
+.slideshow-container img {
+    width: 100%; /*100% makes sure they fit*/
+    height: 100%; 
+    object-fit: cover; /* maintain ratio for object to fit */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* hide all images initially */
+    transition: opacity 1s ease-in-out; /* opacity transition */
+}
+
+/* Keyframes for slideshow animation */
+@keyframes fade {
+    0% { opacity: 0; }
+    14.29% { opacity: 1; }   /* Approx. 4 seconds for visibility to start */
+    35.71% { opacity: 1; }   /* 35.71% of 28 seconds is 10 seconds, so fully visible for 6 seconds total */
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Apply animation to images */
+.slideshow-container img:nth-child(1) {
+    animation: fade 28s infinite; /* Duration of 28 seconds */
+}
+
+.slideshow-container img:nth-child(2) {
+    animation: fade 28s infinite 4s; /* Duration 28 seconds, delay 4 seconds */
+}
+
+.slideshow-container img:nth-child(3) {
+    animation: fade 28s infinite 8s; 
+}
+
+.slideshow-container img:nth-child(4) {
+    animation: fade 28s infinite 12s; 
+}
+
+.slideshow-container img:nth-child(5) {
+    animation: fade 28s infinite 16s; 
+}
+
+.slideshow-container img:nth-child(6) {
+    animation: fade 28s infinite 20s; 
+}
+
+.slideshow-container img:nth-child(7) {
+    animation: fade 28s infinite 24s; 
+}
+
+
+.gallery-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    display: none;
+}
+
+.gallery-container img.active {
+    display: block;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.gallery-nav span {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white; 
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensure the footer is pushed to the bottom */
+}
+.form-group{
+    color:#fffce7
+}
